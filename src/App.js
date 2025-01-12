@@ -12,6 +12,7 @@ function App() {
       <Counter/>
       <DataFetch/>
       <ToDo/>
+      <AppItems/>
       <CountDownTimer/>
     </div>
   );
