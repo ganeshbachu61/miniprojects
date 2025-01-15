@@ -1,13 +1,12 @@
-import react, { useState } from 'react'
+import react, { useState } from 'react';
 
 const Search = ({items}) => {
-    const [query,setQuery] = useState('');
-    const filterItems = items.filter(item => item.toLowerCase().includes(query.toLowerCase()));
-
+    const [query, setQuery] = useState('');
+    const filterItems = items.filter(items => items.toLowerCase().includes(query.toLowerCase()));
     return (
         <div>
-            <h1>Search Filter</h1>
-            <input type='text' placeholder='search' value={query} onChange={(e) => setQuery(e.target.value)}/>
+            <h1>Mini Search Items</h1>
+            <input type='text' placeholder='Search your fruit' value={query} onChange={(e) => setQuery(e.target.value)}/>
             {filterItems.map((item,index) => (
                 <div key={index}>{item}</div>
             ))}
@@ -16,7 +15,9 @@ const Search = ({items}) => {
 }
 
 const AppItems = () => {
-    const arrayItems = ['Apple','Pineapple','Watermelon','Sapota'];
+
+    const arrayItems = ['Apples','Oranges','Watermelon','Pappay','Pineapple'];
     return <Search items={arrayItems}/>
+
 }
 export default AppItems;
