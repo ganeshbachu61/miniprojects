@@ -9,6 +9,7 @@ import ToDo from './components/ToDoList/ToDo';
 import DataFetch from './components/FetchApi/FetchApi';
 import Counter from './components/Counter/Counter';
 import CountDownTimer from './components/Countdown/Countdown';
+import ReactHooks from './Pages/ReactHooks';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
     path:"countdown",
     element:<CountDownTimer/>
   },
+  {
+    path:"reacthooks",
+    element:<ReactHooks/>
+  }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

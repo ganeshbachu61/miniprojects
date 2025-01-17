@@ -12,6 +12,7 @@ const MiniProjects = () => {
           <li onClick={() => setMenu('fetch')} className={menu === "fetch" ? "active":""}><a href='/fetch'>Fetch Api</a></li>
           <li onClick={() => setMenu('counter')} className={menu === "counter" ? "active":""}><a href='/counter'>Counter</a></li>
           <li onClick={() => setMenu('countdown')} className={menu === "countdown" ? "active":""}><a href='/countdown'>CountDown</a></li>
+          <li onClick={() => setMenu('reacthooks')} className={menu === "reacthooks" ? "active":""}><a href='/reacthooks'>React Hooks</a></li>
         </ul>
     </div>
   )
