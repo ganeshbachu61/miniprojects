@@ -27,6 +27,7 @@ const ThemePage = () => {
     const{theme} = useContext(ThemeContext);
     return(
         <div style={{height:"100vh",backgroundColor:theme === 'light' ? "#fff" : "#333", color: theme === 'light' ? "#000" : "#fff"}}>
+            <h2>Context Hook Example</h2>
             <h1>{theme === 'light' ? "Light Mode" : "Dark Mode"}</h1>
             <ThemeButton/>
         </div>
